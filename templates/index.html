@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="blob-1"></div>
+    <div class="blob-2"></div> 
+
+    <div class="container">
+        <div class="glass-card">
+            <h1>Spam <span class="highlight">Detector</span></h1>
+            
+            <div class="input-wrapper">
+                <textarea id="msg" placeholder="Paste your message here..."></textarea>
+            </div>
+
+            <button onclick="checkSpam()" id="check-btn">
+                <span>Analyze Message</span>
+            </button>
+
+            <div id="result-container">
+                <h3 id="result"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
