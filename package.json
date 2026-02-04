@@ -3,9 +3,5 @@
   "version": "1.0.0",
   "scripts": {
     "start": "gunicorn app:app"
-  },
-  "engines": {
-    "node": "18.x",
-    "npm": "9.x"
   }
 }
